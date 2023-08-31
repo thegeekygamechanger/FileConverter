@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+      <style>
+        .nav-item {
+          display: inline-block;
+          padding: 10px 20px;
+          text-decoration: none;
+        }
+      
+        .nav-item b {
+          color: #000000; /* Text color */
+        }
+      
+        .highlighted {
+          background-color: #46ad6e; /* Highlight color */
+          border-radius: 20px; /* Rounded corners */
+        }
+      </style>
+        <title>JPG TO PDF</title>
+        <link rel="stylesheet" href="styles2.css">
+        <div class="ribbon">
+            <img src="logo/jpg to pdf.png" alt="jpt to pdf.png" class="logo" height="60" width="150"/></div>
+    </head>
+<body>
+        <div class="top-navbar">
+          <a href="index.html" class="nav-item highlighted"><b>Conversion Tools</b></a>
+          <a href="Mulitple.html" class="nav-item"><b>Multiple PDF</b></a>
+            <a href="unlock.html" class="nav-item"><b>Unlock PDF</b></a>
+            <a href="watermark.html" class="nav-item"><b>Add watermark</b></a>
+            <a href="resize.html" class="nav-item"><b>Resize PDF</b></a>
+            <a href="remove.html" class="nav-item"><b>Remove PDF</b></a>
+        </div>
+   <div class="container">
+        <form id="conversionForm" enctype="multipart/form-data"><br><br>
+           <center> <label for="conversionType">Select Conversion Type</label>
+            <select id="conversionType" onchange="toggleFileInput()"><br>
+                <option value="">Select type</option>
+                <option value="jpg_to_png">JPG to PNG</option>
+                <option value="png_to_jpg">PNG to JPG</option>
+                <option value="word_to_pdf">WORD to PDF</option>
+                <option value="pdf_to_word">PDF to WORD</option>
+            </select>
+            <input type="file" id="fileInput" name="File" style="display: none;" /><br><br>
+            <input type="button" id="convertButton" value="Convert File" onclick="convertFile()" />
+            <p><b>Unlock the power of transformation with our magical online converter! Effortlessly morph PDFs, JPGs, and PNGs into any format you desire and all for free. Embrace the art of seamless conversion and unleash your creativity without bounds!</p></b><br>
+          </form>   
+        </div></center>
+        </div>
+    <div class="footer">
+        <center><h5>JPG TO PDF @Copyright reserved 2023</center></h5>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

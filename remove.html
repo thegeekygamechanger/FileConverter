@@ -1,0 +1,65 @@
+<html>
+    <head><style>
+        .nav-item {
+          display: inline-block;
+          padding: 10px 20px;
+          text-decoration: none;
+        }
+      
+        .nav-item b {
+          color: #000000; /* Text color */
+        }
+      
+        .highlighted {
+          background-color: #46ad6e; /* Highlight color */
+          border-radius: 20px; /* Rounded corners */
+        }
+      </style></head>
+    <title>Remove Pages PDF</title>
+    <div class="ribbon">
+        <img src="logo/jpg to pdf.png" alt="jpt to pdf.png" class="logo" height="60" width="150"/></div>
+    <link rel="stylesheet" href="styles2.css">
+    <body>
+        <div class="top-navbar">
+          <a href="index.html" class="nav-item"><b>Conversion Tools</b></a>
+          <a href="Mulitple.html" class="nav-item"><b>Multiple PDF</b></a>
+            <a href="unlock.html" class="nav-item"><b>Unlock PDF</b></a>
+            <a href="watermark.html" class="nav-item"><b>Add watermark</b></a>
+            <a href="resize.html" class="nav-item"><b>Resize PDF</b></a>
+            <a href="remove.html" class="nav-item highlighted"><b>Remove PDF</b></a>
+            </div>
+        <h3><center>Remove Pages</h3></center>
+        <div class="container">
+        <script>
+            function processForm() {
+                var form = document.getElementById("convertForm");
+                var selectedPreset = document.getElementById("compressionPresets").value;
+                var presetInput = document.createElement("input");
+                presetInput.type = "hidden";
+                presetInput.name = "selectedPreset";
+                presetInput.value = selectedPreset;
+                form.appendChild(presetInput);
+                form.submit();
+            }
+        </script>
+          <form id="deletePagesForm" action="https://v2.convertapi.com/convert/pdf/to/delete-pages?Secret=your api key&download=attachment" method="post" enctype="multipart/form-data">
+            <label for="fileInput">Choose a file:</label><br><br>
+            <input type="file" name="File" id="fileInput" /><br><br>
+            <label for="pageRangeInput" id="con">Page Range:</label>
+           <input type="text" name="PageRange" id="pageRangeInput" value="" />
+            <center> <br><button type="submit" id="convertButton">Remove Pages</button></center>
+        </form>
+       <p><b>Unlock the potential of your PDFs with our liberating container a free and seamless solution to effortlessly delete unwanted pages, empowering you to curate your documents like never before</b></p>
+        <script>
+            document.getElementById("deletePagesForm").addEventListener("submit", function(event) {
+                event.preventDefault();
+                this.submit();
+            });
+        </script></div>
+        <div class="footer">
+            <center><h5>JPG TO PDF @Copyright reserved 2023</center></h5>
+        </div>
+        <script src="script.js"></script>
+        </body>
+
+        </html>

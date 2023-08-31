@@ -1,0 +1,47 @@
+<html>
+    <head><style>
+        .nav-item {
+          display: inline-block;
+          padding: 10px 20px;
+          text-decoration: none;
+        }
+      
+        .nav-item b {
+          color: #000000; /* Text color */
+        }
+      
+        .highlighted {
+          background-color: #46ad6e; /* Highlight color */
+          border-radius: 20px; /* Rounded corners */
+        }
+      </style></head>
+    <title>Multiple PDF</title>
+    <link rel="stylesheet" href="styles2.css">
+    <img src="logo/jpg to pdf.png" alt="jpt to pdf.png" class="logo" height="60" width="150"/></div>
+    <body>
+        <div class="top-navbar">
+          <a href="index.html" class="nav-item"><b>Conversion Tools</b></a>
+          <a href="Mulitple.html" class="nav-item highlighted"><b>Multiple PDF</b></a>
+            <a href="unlock.html" class="nav-item"><b>Unlock PDF</b></a>
+            <a href="watermark.html" class="nav-item"><b>Add watermark</b></a>
+            <a href="resize.html" class="nav-item"><b>Resize PDF</b></a>
+            <a href="remove.html" class="nav-item"><b>Remove PDF</b></a>
+           </div>
+        <h3><center>Perform Multiple Actions</h3></center>
+        <div class="container"><form action="convert.php" method="post" enctype="multipart/form-data"><br>
+            <label for="images">Select JPG & PNG Images:</label><br><br>
+            <input type="file" name="images[]" accept=".jpg,.png" multiple required>
+            <br>
+           <center> <input type="submit" id="convertbutton" value="Convert to PDF"></center>
+        </form><br>
+        <form action="convert2.php" method="post" enctype="multipart/form-data">
+          <label for="pdfFile">Select a PDF File:</label><br>
+          <input type="file" name="pdfFile" accept=".pdf" required><br>
+         <center> <input type="submit" id="convertbutton"  value="Convert to Images"><br><br>
+                </form><p><b>Unveil Possibilities: Transform Images and PDFs into Masterpieces with Our Multi-Action Magic!</b></p></div>
+        <div class="footer">
+           <h5>JPG TO PDF @Copyright reserved 2023</h5>
+        </div>
+        <script src="script.js"></script>
+        </body>
+        </html>

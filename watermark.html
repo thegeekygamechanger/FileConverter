@@ -1,0 +1,47 @@
+<html>
+    <head><style>
+        .nav-item {
+          display: inline-block;
+          padding: 10px 20px;
+          text-decoration: none;
+        }
+      
+        .nav-item b {
+          color: #000000; /* Text color */
+        }
+      
+        .highlighted {
+          background-color: #46ad6e; /* Highlight color */
+          border-radius: 20px; /* Rounded corners */
+        }
+      </style></head>
+    <title>Watermark PDF</title>
+    <link rel="stylesheet" href="styles2.css">
+    <img src="logo/jpg to pdf.png" alt="jpt to pdf.png" class="logo" height="60" width="150"/></div>
+    <body>
+        <div class="top-navbar">
+          <a href="index.html" class="nav-item"><b>Conversion Tools</b></a>
+          <a href="Mulitple.html" class="nav-item"><b>Multiple PDF</b></a>
+            <a href="unlock.html" class="nav-item"><b>Unlock PDF</b></a>
+            <a href="watermark.html" class="nav-item highlighted"><b>Add watermark</b></a>
+            <a href="resize.html" class="nav-item"><b>Resize PDF</b></a>
+            <a href="remove.html" class="nav-item"><b>Remove PDF</b></a>
+           </div>
+        <h3><center>Add Watermark</h3></center>
+        <div class="container"><form action="process.php" method="post" enctype="multipart/form-data"><br>
+        <label for="document">Select Document PDF:</label><br>
+        <input type="file" name="document" id="document" accept=".pdf" required><br>
+        <br>
+       <label for="logo">Select Logo Image:</label><br>
+        <input type="file" name="logo" id="logo" accept=".png" required><br><br>
+        <br>
+        <center><input type="submit" id="convertButton" value="Generate Watermarked PDF"><br></center><br>
+        <b><p>Adding a watermark to a PDF is like imprinting your identity on a canvas of ideas, a reminder that every creation carries the mark of its creator.</p>
+
+    </form></div>
+        <div class="footer">
+           <h5>JPG TO PDF @Copyright reserved 2023</h5>
+        </div>
+        <script src="script.js"></script>
+        </body>
+        </html>

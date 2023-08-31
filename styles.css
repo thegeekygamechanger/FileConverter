@@ -1,0 +1,110 @@
+body {
+    font-family: 'Poppins', sans-serif; /* Use the correct font family name */
+    margin: 0;
+    padding: 0;
+    background-color: #c2eac4;
+    color: #0d0c0c;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the container fills the viewport height */
+}
+
+.logo {
+    height: 65px;
+    width: 150px;
+    border-radius: 20%; /* This will create rounded edges (circle) */
+    margin-top: 10px;
+    margin-right: 1000px; /* Adjust the margin as needed */
+    /* Adjust the margin as needed */
+    align-self: flex-start; /* This will align the logo to the top left side */
+    box-shadow: 0 0 70px rgba(0, 0, 0, 0.2);
+    opacity: 0.9; /* Set the logo's opacity */
+    background-color: #e3ecdb; /* Match the background color of the container */
+}
+.top-navbar {
+ 
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: auto;
+}
+
+/* Navbar item styles */
+.nav-item {
+    float: right;
+    display: block;
+    color: rgb(21, 23, 22);
+    text-align: center;
+    margin-top: 20px;
+    padding: 12px 12px;
+    margin-right: 10px; /* Adjusted margin for spacing between items */
+    margin-bottom: 5px; /* Adjusted margin for spacing below items */
+    text-decoration: none;
+    transition: background-color 0.3s;
+    border-radius: 20px; /* Rounded edges */
+}
+
+.nav-item:hover {
+    background-color: #00964e;
+    text-decoration: none; /* Remove underline on hover */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 100px;
+    margin-top: 1px;
+    border-radius: 20px; /* Rounded edges */
+    background-color: #fff;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5); /* Box shadow */
+        flex-grow: 1; /* Allow the container to grow and fill the available space */
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+label, select, input {
+    margin: 10px;
+}
+
+input[type="file"] {
+    display: block;
+}
+
+input[type="button"] {
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    display: none;
+}
+
+/* Ribbon styles */
+
+.error-message {
+    color: red;
+    font-weight: bold;
+}
+}
+/* Footer styles */
+.footer {
+    width: 100%;
+    background-color: #c2eac4;
+    color: #241d1d;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 0 0 30px 30px; /* Rounded edges, only bottom corners */
+}
+canvas {
+    width: auto; /* Set the canvas width to 100% */
+    height: auto; /* Let the height adjust accordingly to maintain aspect ratio */
+}

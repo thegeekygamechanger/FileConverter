@@ -1,0 +1,51 @@
+<html>
+    <head><style>
+        .nav-item {
+          display: inline-block;
+          padding: 10px 20px;
+          text-decoration: none;
+        }
+      
+        .nav-item b {
+          color: #000000; /* Text color */
+        }
+      
+        .highlighted {
+          background-color: #46ad6e; /* Highlight color */
+          border-radius: 20px; /* Rounded corners */
+        }
+      </style></head>
+    <title>Resize PDF</title>
+    <link rel="stylesheet" href="styles2.css">
+    <img src="logo/jpg to pdf.png" alt="jpt to pdf.png" class="logo" height="60" width="150"/></div>
+    
+    <body>
+        <div class="top-navbar">
+          <a href="index.html" class="nav-item"><b>Conversion Tools</b></a>
+          <a href="Mulitple.html" class="nav-item"><b>Multiple PDF</b></a>
+            <a href="unlock.html" class="nav-item"><b>Unlock PDF</b></a>
+            <a href="watermark.html" class="nav-item"><b>Add watermark</b></a>
+            <a href="resize.html" class="nav-item highlighted"><b>Resize PDF</b></a>
+            <a href="remove.html" class="nav-item"><b>Remove PDF</b></a></div>
+            <h3><center>Resize PDF</h3></center>
+            <div class="container">
+             choose file: <form action="https://v2.convertapi.com/convert/pdf/to/compress?Secret=your api key&download=attachment" method="post" enctype="multipart/form-data"><br>
+                <input type="file" name="File" /><br><br>
+                <br><label for="Presets">Select Compression Preset:</label><br>
+                <select name="Presets" id="Presets">
+                    <option value="none">none: Not set - advanced properties used</option>
+                    <option value="text">text: Text - 20 image DPI, lowest quality, highest compression</option>
+                    <option value="archive">Archive - 40 image DPI, low quality, high compression</option>
+                    <option value="Web">Web: Web - 75 image DPI, medium quality, high compression</option>
+                    <option value="ebook">Ebook: Ebook - 150 image DPI, high quality, medium compression</option>
+                    <option value="printer">printer: Printer - 300 image DPI, high quality, low compression</option>
+                </select><br><br>
+                <br><center><input type="submit" value="Convert file" id="convertButton"/></center>
+              <b>  <p>Empower Your Documents: Redefining PDF Resizing Through a Versatile Range of Thoughtfully Designed Preset Dimensions.</p>
+            </form></div>
+        <div class="footer">
+            <center><h5>JPG TO PDF @Copyright reserved 2023</center></h5>
+        </div>
+        <script src="script.js"></script>
+        </body>
+        </html>

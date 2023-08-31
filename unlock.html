@@ -1,0 +1,45 @@
+     <html>
+        <head><style>
+            .nav-item {
+              display: inline-block;
+              padding: 10px 20px;
+              text-decoration: none;
+            }
+          
+            .nav-item b {
+              color: #000000; /* Text color */
+            }
+          
+            .highlighted {
+              background-color: #46ad6e; /* Highlight color */
+              border-radius: 20px; /* Rounded corners */
+            }
+          </style></head>
+    <title>Unlock PDF</title>
+    <link rel="stylesheet" href="styles2.css">
+    <img src="logo/jpg to pdf.png" alt="jpt to pdf.png" class="logo" height="60" width="150"/></div>
+    <body>
+        <div class="top-navbar">
+          <a href="index.html" class="nav-item"><b>Conversion Tools</b></a>
+          <a href="Mulitple.html" class="nav-item"><b>Multiple PDF</b></a>
+            <a href="unlock.html" class="nav-item highlighted"><b>Unlock PDF</b></a>
+            <a href="watermark.html" class="nav-item"><b>Add watermark</b></a>
+            <a href="resize.html" class="nav-item"><b>Resize PDF</b></a>
+            <a href="remove.html" class="nav-item"><b>Remove PDF</b></a>
+          </div>
+        <h3><center>Unlock PDF file</h3></center>
+        <div class="container">
+            <form action="https://v2.convertapi.com/convert/pdf/to/decrypt?Secret=your api key&download=attachment" method="post" enctype="multipart/form-data">
+                <label for="fileInput">Choose a file:</label><br><br>
+                <input type="file" name="File" /><br><br>
+                <label for="password">Enter the password:</label>
+                <input type="password" name="Password" id="passwordInput" required /><br>
+                <center><br><input type="submit" value="Decrypt file" onclick="return validatePassword();" id="convertButton"/><br><br></center>
+                <p><b>"Embark on a Journey of Discovery: Uncover the Intriguing Secrets of PDFs with Our Enchanting Decryption Tool - Unleash, Reveal, and Explore the Bountiful Hidden Treasures Concealed Within!"</b></p><br>
+         </form></div>
+        <script src="script.js"></script>
+        <div class="footer">
+            <center><h5>JPG TO PDF @Copyright reserved 2023</center></h5>
+        </div>
+        </body>
+        </html>
